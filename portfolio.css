@@ -1,0 +1,757 @@
+/* ================= GENERAL ================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #ffffff;
+    color: #222;
+    line-height: 1.6;
+}
+
+section {
+    scroll-margin-top: 80px;
+}
+
+a {
+    text-decoration: none;
+}
+
+button,
+input,
+textarea {
+    font-family: inherit;
+}
+
+
+/* ================= NAVBAR ================= */
+
+header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+
+    background: #ffffff;
+
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.07);
+}
+
+.navbar {
+    max-width: 1100px;
+    height: 72px;
+
+    margin: auto;
+    padding: 0 20px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    font-size: 27px;
+    font-weight: bold;
+    color: #4f46e5;
+}
+
+.logo span,
+.footer-content span {
+    color: #f97316;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+
+    list-style: none;
+}
+
+.nav-links a {
+    color: #333;
+    font-size: 15px;
+
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    color: #4f46e5;
+}
+
+.menu-btn {
+    display: none;
+
+    border: none;
+    background: none;
+
+    font-size: 26px;
+    cursor: pointer;
+}
+
+
+/* ================= HERO ================= */
+
+.hero {
+    max-width: 1100px;
+    min-height: 620px;
+
+    margin: auto;
+    padding: 80px 20px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 60px;
+}
+
+.hero-content {
+    max-width: 650px;
+}
+
+.welcome-text {
+    color: #4f46e5;
+
+    font-size: 13px;
+    font-weight: bold;
+
+    letter-spacing: 2px;
+
+    margin-bottom: 12px;
+}
+
+.hero h1 {
+    font-size: 58px;
+    line-height: 1.15;
+
+    margin-bottom: 10px;
+}
+
+.hero h1 span {
+    color: #4f46e5;
+}
+
+.hero h2 {
+    color: #555;
+
+    font-size: 23px;
+    font-weight: normal;
+
+    margin-bottom: 20px;
+}
+
+.hero-description {
+    color: #666;
+
+    font-size: 17px;
+
+    max-width: 620px;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 15px;
+
+    margin-top: 30px;
+}
+
+.btn {
+    display: inline-block;
+
+    padding: 12px 24px;
+
+    border: none;
+    border-radius: 7px;
+
+    background: #4f46e5;
+    color: white;
+
+    font-size: 15px;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #3730a3;
+    transform: translateY(-2px);
+}
+
+.btn.outline {
+    background: transparent;
+
+    border: 1px solid #4f46e5;
+
+    color: #4f46e5;
+}
+
+.btn.outline:hover {
+    background: #4f46e5;
+    color: white;
+}
+
+
+/* ================= HERO CARD ================= */
+
+.hero-card {
+    width: 300px;
+
+    padding: 45px 30px;
+
+    background: #f5f3ff;
+
+    border-radius: 18px;
+
+    text-align: center;
+
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.08);
+}
+
+.initials {
+    width: 135px;
+    height: 135px;
+
+    margin: auto auto 25px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background: #4f46e5;
+    color: white;
+
+    font-size: 42px;
+    font-weight: bold;
+}
+
+.hero-card h3 {
+    font-size: 23px;
+    margin-bottom: 5px;
+}
+
+.hero-card p {
+    color: #666;
+}
+
+.location {
+    margin-top: 12px;
+    color: #666;
+    font-size: 14px;
+}
+
+
+/* ================= SECTIONS ================= */
+
+.section {
+    max-width: 1100px;
+
+    margin: auto;
+
+    padding: 90px 20px;
+}
+
+.light-section {
+    max-width: none;
+
+    background: #f7f7fb;
+
+    padding-left: max(20px, calc((100% - 1060px) / 2));
+    padding-right: max(20px, calc((100% - 1060px) / 2));
+}
+
+.section-heading {
+    margin-bottom: 45px;
+}
+
+.section-heading p {
+    color: #4f46e5;
+
+    font-size: 13px;
+    font-weight: bold;
+
+    letter-spacing: 2px;
+}
+
+.section-heading h2 {
+    font-size: 38px;
+
+    margin-top: 5px;
+}
+
+
+/* ================= ABOUT ================= */
+
+.about-container {
+    display: grid;
+
+    grid-template-columns: 1.2fr 0.8fr;
+
+    gap: 60px;
+
+    align-items: center;
+}
+
+.about-text h3 {
+    font-size: 27px;
+
+    margin-bottom: 18px;
+}
+
+.about-text p {
+    color: #666;
+
+    margin-bottom: 15px;
+}
+
+.about-box {
+    background: white;
+
+    padding: 25px;
+
+    border-radius: 12px;
+
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.06);
+}
+
+.info-row {
+    display: flex;
+
+    justify-content: space-between;
+
+    gap: 20px;
+
+    padding: 15px 0;
+
+    border-bottom: 1px solid #eeeeee;
+}
+
+.info-row:last-child {
+    border-bottom: none;
+}
+
+.info-row span {
+    color: #666;
+
+    text-align: right;
+}
+
+
+/* ================= EDUCATION ================= */
+
+.education-card {
+    max-width: 800px;
+
+    margin: auto;
+
+    padding: 35px;
+
+    background: white;
+
+    border-radius: 12px;
+
+    display: flex;
+
+    gap: 25px;
+
+    align-items: flex-start;
+
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.06);
+}
+
+.education-icon {
+    width: 60px;
+    height: 60px;
+
+    flex-shrink: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 12px;
+
+    background: #ebe9ff;
+
+    font-size: 28px;
+}
+
+.education-card h3 {
+    font-size: 23px;
+}
+
+.education-card h4 {
+    color: #4f46e5;
+
+    font-size: 17px;
+
+    margin: 5px 0 10px;
+}
+
+.education-card p {
+    color: #666;
+
+    margin-bottom: 10px;
+}
+
+.education-location {
+    color: #777;
+
+    font-size: 14px;
+}
+
+
+/* ================= INTERNSHIP ================= */
+
+.internship-container {
+    display: grid;
+
+    grid-template-columns: 1.2fr 0.8fr;
+
+    gap: 30px;
+}
+
+.internship-main {
+    padding: 40px;
+
+    background: #4f46e5;
+
+    color: white;
+
+    border-radius: 15px;
+}
+
+.status {
+    display: inline-block;
+
+    padding: 6px 12px;
+
+    border-radius: 20px;
+
+    background: rgba(255, 255, 255, 0.15);
+
+    font-size: 11px;
+
+    letter-spacing: 1px;
+
+    margin-bottom: 20px;
+}
+
+.internship-main h3 {
+    font-size: 28px;
+
+    margin-bottom: 18px;
+}
+
+.internship-main p {
+    color: #eeeeff;
+
+    margin-bottom: 15px;
+}
+
+.learning-list {
+    padding: 30px;
+
+    background: #f7f7fb;
+
+    border-radius: 15px;
+}
+
+.learning-list h3 {
+    font-size: 22px;
+
+    margin-bottom: 20px;
+}
+
+.learning-item {
+    display: flex;
+
+    gap: 15px;
+
+    padding: 14px 0;
+
+    border-bottom: 1px solid #ddd;
+}
+
+.learning-item:last-child {
+    border-bottom: none;
+}
+
+.learning-item span {
+    color: #4f46e5;
+
+    font-weight: bold;
+}
+
+.learning-item p {
+    color: #555;
+}
+
+
+/* ================= CONTACT ================= */
+
+.contact-container {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 60px;
+
+    align-items: start;
+}
+
+.contact-details h3 {
+    font-size: 28px;
+
+    margin-bottom: 12px;
+}
+
+.contact-details > p {
+    color: #666;
+
+    max-width: 500px;
+
+    margin-bottom: 30px;
+}
+
+.contact-detail {
+    display: flex;
+
+    gap: 15px;
+
+    align-items: center;
+
+    margin-bottom: 22px;
+}
+
+.contact-icon {
+    width: 45px;
+    height: 45px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #ebe9ff;
+
+    border-radius: 8px;
+
+    font-size: 20px;
+}
+
+.contact-detail p {
+    color: #666;
+
+    font-size: 14px;
+}
+
+.contact-form {
+    background: white;
+
+    padding: 30px;
+
+    border-radius: 12px;
+
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.06);
+}
+
+.contact-form label {
+    display: block;
+
+    font-size: 14px;
+    font-weight: bold;
+
+    margin-bottom: 7px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+
+    padding: 13px;
+
+    margin-bottom: 18px;
+
+    border: 1px solid #ddd;
+
+    border-radius: 7px;
+
+    outline: none;
+
+    resize: vertical;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    border-color: #4f46e5;
+}
+
+#formMessage {
+    margin-top: 15px;
+
+    font-size: 14px;
+}
+
+
+/* ================= FOOTER ================= */
+
+footer {
+    background: #171725;
+
+    color: white;
+
+    text-align: center;
+
+    padding: 30px 20px;
+}
+
+.footer-content h3 {
+    font-size: 24px;
+
+    margin-bottom: 5px;
+}
+
+.footer-content p {
+    color: #aaa;
+
+    font-size: 14px;
+
+    margin: 5px;
+}
+
+
+/* ================= MOBILE ================= */
+
+@media (max-width: 800px) {
+
+    .menu-btn {
+        display: block;
+    }
+
+    .nav-links {
+        display: none;
+
+        position: absolute;
+
+        top: 72px;
+        left: 0;
+
+        width: 100%;
+
+        padding: 20px;
+
+        background: white;
+
+        flex-direction: column;
+
+        gap: 18px;
+
+        text-align: center;
+
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .hero {
+        min-height: auto;
+
+        padding-top: 70px;
+        padding-bottom: 70px;
+
+        flex-direction: column;
+
+        text-align: center;
+    }
+
+    .hero-content {
+        max-width: 100%;
+    }
+
+    .hero h1 {
+        font-size: 43px;
+    }
+
+    .hero h2 {
+        font-size: 20px;
+    }
+
+    .hero-buttons {
+        justify-content: center;
+    }
+
+    .hero-card {
+        width: 100%;
+        max-width: 320px;
+    }
+
+    .about-container,
+    .internship-container,
+    .contact-container {
+        grid-template-columns: 1fr;
+    }
+
+    .section-heading h2 {
+        font-size: 32px;
+    }
+
+    .education-card {
+        flex-direction: column;
+    }
+
+}
+
+
+@media (max-width: 450px) {
+
+    .navbar {
+        height: 65px;
+    }
+
+    .hero h1 {
+        font-size: 36px;
+    }
+
+    .hero-description {
+        font-size: 15px;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+    }
+
+    .hero-buttons .btn {
+        width: 100%;
+    }
+
+    .section {
+        padding-top: 65px;
+        padding-bottom: 65px;
+    }
+
+    .info-row {
+        flex-direction: column;
+        gap: 3px;
+    }
+
+    .info-row span {
+        text-align: left;
+    }
+
+    .internship-main {
+        padding: 28px;
+    }
+
+}

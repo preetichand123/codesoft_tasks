@@ -1,0 +1,370 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+
+    background: #f5f7fb;
+
+    color: #1f2937;
+
+    min-height: 100vh;
+}
+
+
+header {
+    height: 70px;
+
+    background: white;
+
+    border-bottom: 1px solid #e5e7eb;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    padding: 0 8%;
+}
+
+
+.logo {
+    font-size: 26px;
+
+    font-weight: bold;
+
+    color: #315dcc;
+}
+
+
+header p {
+    color: #6b7280;
+
+    font-size: 14px;
+}
+
+
+main {
+    width: 92%;
+
+    max-width: 850px;
+
+    margin: auto;
+
+    padding: 65px 0;
+}
+
+
+.intro {
+    text-align: center;
+
+    margin-bottom: 30px;
+}
+
+
+.intro span {
+    color: #315dcc;
+
+    font-size: 12px;
+
+    font-weight: bold;
+
+    letter-spacing: 2px;
+}
+
+
+.intro h1 {
+    font-size: 42px;
+
+    margin: 12px 0;
+}
+
+
+.intro p {
+    color: #6b7280;
+
+    line-height: 1.7;
+}
+
+
+.expense-box {
+    background: white;
+
+    padding: 28px;
+
+    border-radius: 18px;
+
+    box-shadow: 0 10px 35px rgba(0, 0, 0, 0.08);
+}
+
+
+/* Summary */
+
+.summary {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 15px;
+
+    margin-bottom: 30px;
+}
+
+
+.summary-card {
+    background: #f5f7fb;
+
+    padding: 20px;
+
+    border-radius: 12px;
+}
+
+
+.summary-card p {
+    color: #6b7280;
+
+    font-size: 14px;
+
+    margin-bottom: 8px;
+}
+
+
+.summary-card h2 {
+    color: #315dcc;
+
+    font-size: 28px;
+}
+
+
+/* Form */
+
+.form-area {
+    border-top: 1px solid #eef0f4;
+
+    padding-top: 25px;
+}
+
+
+.form-area h2 {
+    font-size: 20px;
+
+    margin-bottom: 15px;
+}
+
+
+.input-group {
+    display: grid;
+
+    grid-template-columns: 1.5fr 1fr 1fr auto;
+
+    gap: 10px;
+}
+
+
+input,
+select {
+    width: 100%;
+
+    padding: 13px 14px;
+
+    border: 1px solid #d1d5db;
+
+    border-radius: 9px;
+
+    outline: none;
+
+    font-size: 14px;
+
+    background: white;
+}
+
+
+input:focus,
+select:focus {
+    border-color: #315dcc;
+}
+
+
+#addExpenseBtn {
+    border: none;
+
+    background: #315dcc;
+
+    color: white;
+
+    padding: 0 18px;
+
+    border-radius: 9px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+}
+
+
+#addExpenseBtn:hover {
+    background: #244db4;
+}
+
+
+/* Expense history */
+
+.expense-section {
+    margin-top: 30px;
+}
+
+
+.expense-heading {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    margin-bottom: 12px;
+}
+
+
+.expense-heading h2 {
+    font-size: 20px;
+}
+
+
+#clearAllBtn {
+    border: none;
+
+    background: transparent;
+
+    color: #dc2626;
+
+    cursor: pointer;
+
+    font-size: 14px;
+}
+
+
+#expenseList {
+    list-style: none;
+}
+
+
+.expense-item {
+    display: flex;
+
+    align-items: center;
+
+    gap: 15px;
+
+    padding: 15px 0;
+
+    border-bottom: 1px solid #eef0f4;
+}
+
+
+.expense-details {
+    flex: 1;
+}
+
+
+.expense-name {
+    font-weight: bold;
+
+    margin-bottom: 5px;
+}
+
+
+.expense-category {
+    color: #6b7280;
+
+    font-size: 13px;
+}
+
+
+.expense-amount {
+    font-weight: bold;
+
+    color: #dc2626;
+}
+
+
+.delete-btn {
+    border: none;
+
+    background: #fff0f0;
+
+    color: #dc2626;
+
+    padding: 7px 10px;
+
+    border-radius: 7px;
+
+    cursor: pointer;
+}
+
+
+#emptyMessage {
+    text-align: center;
+
+    color: #9ca3af;
+
+    padding: 25px 0 10px;
+}
+
+
+/* Footer */
+
+footer {
+    text-align: center;
+
+    padding: 25px;
+
+    color: #9ca3af;
+
+    font-size: 13px;
+
+    line-height: 1.8;
+}
+
+
+/* Mobile */
+
+@media (max-width: 700px) {
+
+    header {
+        padding: 0 5%;
+    }
+
+    header p {
+        display: none;
+    }
+
+    main {
+        padding-top: 45px;
+    }
+
+    .intro h1 {
+        font-size: 34px;
+    }
+
+    .expense-box {
+        padding: 20px;
+    }
+
+    .input-group {
+        grid-template-columns: 1fr;
+    }
+
+    #addExpenseBtn {
+        height: 46px;
+    }
+
+    .summary {
+        grid-template-columns: 1fr;
+    }
+
+}
