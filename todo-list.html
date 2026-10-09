@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Preeti Chand | To-Do List</title>
+
+    <link rel="stylesheet" href="todo-list.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">Preeti.</div>
+        <p>BCA Student • 2nd Year</p>
+    </header>
+
+    <main>
+        <section class="intro">
+            <span>INTERNSHIP PROJECT</span>
+
+            <h1>My To-Do List</h1>
+
+            <p>
+                A simple task management project created by
+                <strong>Preeti Chand</strong>, BCA 2nd Year student
+                at Guru Ram Das University, Dehradun.
+            </p>
+        </section>
+
+        <section class="todo-box">
+
+            <div class="input-area">
+                <input
+                    type="text"
+                    id="taskInput"
+                    placeholder="Enter your task..."
+                >
+
+                <button id="addTaskBtn">Add Task</button>
+            </div>
+
+            <div class="task-header">
+                <span id="taskCount">0 tasks left</span>
+
+                <button id="clearBtn">
+                    Clear Completed
+                </button>
+            </div>
+
+            <ul id="taskList"></ul>
+
+            <p id="emptyMessage">
+                No tasks yet. Add your first task!
+            </p>
+
+        </section>
+    </main>
+
+    <footer>
+        <p id="copyright"></p>
+        <p>Built with HTML, CSS & JavaScript</p>
+    </footer>
+
+    <script src="todo-list.js"></script>
+
+</body>
+</html>

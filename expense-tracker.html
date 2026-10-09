@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Preeti Chand | Expense Tracker</title>
+
+    <link rel="stylesheet" href="expense-tracker.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">Preeti.</div>
+        <p>BCA Student • 2nd Year</p>
+    </header>
+
+
+    <main>
+
+        <section class="intro">
+
+            <span>INTERNSHIP PROJECT</span>
+
+            <h1>Expense Tracker</h1>
+
+            <p>
+                A simple expense tracking application created by
+                <strong>Preeti Chand</strong>, BCA 2nd Year student
+                at Guru Ram Das University, Dehradun.
+            </p>
+
+        </section>
+
+
+        <section class="expense-box">
+
+            <div class="summary">
+
+                <div class="summary-card">
+                    <p>Total Expenses</p>
+                    <h2 id="totalAmount">₹0</h2>
+                </div>
+
+                <div class="summary-card">
+                    <p>Total Entries</p>
+                    <h2 id="totalEntries">0</h2>
+                </div>
+
+            </div>
+
+
+            <div class="form-area">
+
+                <h2>Add Expense</h2>
+
+                <div class="input-group">
+
+                    <input
+                        type="text"
+                        id="expenseName"
+                        placeholder="Expense name"
+                    >
+
+                    <input
+                        type="number"
+                        id="expenseAmount"
+                        placeholder="Amount"
+                        min="1"
+                    >
+
+                    <select id="expenseCategory">
+
+                        <option value="">Select Category</option>
+
+                        <option value="Food">Food</option>
+
+                        <option value="Travel">Travel</option>
+
+                        <option value="Shopping">Shopping</option>
+
+                        <option value="Education">Education</option>
+
+                        <option value="Bills">Bills</option>
+
+                        <option value="Other">Other</option>
+
+                    </select>
+
+                    <button id="addExpenseBtn">
+                        Add Expense
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <div class="expense-section">
+
+                <div class="expense-heading">
+
+                    <h2>Expense History</h2>
+
+                    <button id="clearAllBtn">
+                        Clear All
+                    </button>
+
+                </div>
+
+
+                <ul id="expenseList"></ul>
+
+
+                <p id="emptyMessage">
+                    No expenses added yet.
+                </p>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <footer>
+
+        <p id="copyright"></p>
+
+        <p>
+            Built with HTML, CSS & JavaScript
+        </p>
+
+    </footer>
+
+
+    <script src="expense-tracker.js"></script>
+
+</body>
+</html>
